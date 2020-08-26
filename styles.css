@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 1440px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 652px;
+  background: url(images/head-cover.jpg) 50% 100% no-repeat;
+}
+
+/*Navigation bar*/
+nav {
+  margin-top: 20px;
+  width: 980px;
+  height: 36px;
+  margin: 10px auto;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+}
+
+.globalnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.globalnav li {
+  display: block;
+  padding-top: 16px;
+  width: 105px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.list:hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQ…zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC) repeat-x 0 0, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D) repeat-y 100% 0, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC) repeat-y 0 0, rgba(0, 0, 0, .4);
+}
+
+#gn-apple {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% 2px;
+  border-right: 1px solid #00000056;
+}
+
+#gn-store {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -28px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-mac {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -58px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-ipod {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -88px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-iphone {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -118px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-ipad {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -148px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-itunes {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -178px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#gn-support {
+  background-image: url('https://web.archive.org/web/20140301004259im_/http:/images.apple.com/global/nav/images/globalnav_text.svg');
+  background-position: 50% -208px;
+  border-right: 1px solid #00000056;
+  border-left: 1px solid #ddcfcf56;
+}
+
+#search {
+
+  border-left: 1px solid #ddcfcf56;
+}
+
+form {
+  position: relative;
+  left: 20px;
+  top: 2px;
+}
+
+input {
+  position: absolute;
+  top: -12px;
+  width: 106px;
+  height: 23px;
+  border-radius: 12px;
+  background-image: none;
+  border: 1px solid #8b8a8a;
+  box-shadow: inset 0px 1px 0px black;
+  background: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+.fa-search {
+  font-size: 11px;
+  color: white;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  z-index: 2;
+}
+
+/*Text on picture*/
+section {
+  text-align: center;
+  margin-top: 220px;
+}
+
+.top,
+.middle,
+.bottom {
+  color: white;
+  margin: auto;
+  padding: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+}
+
+.top {
+  width: 980px;
+  font-size: 64px;
+}
+
+.middle {
+  width: 980px;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.bottom {
+  margin-top: 10px;
+  width: 980px;
+  font-size: 26px;
+}
+
+.fa-play-circle {
+  margin-left: 10px;
+}
+
+/*article pics*/
+.bottom-section {
+  overflow: hidden;
+  height: 200;
+  margin: 654px auto 0px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.part {
+  align-self: center;
+  width: 25%;
+}
+
+#part2,
+#part3,
+#part4 {
+  border-left: 2px solid #fff;
+}
+
+footer {
+  width: 1100px;
+  margin: auto;
+  color: #868888;
+  font-size: 11px;
+}
+
+
+.footer-wraper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.left {
+  padding-top: 10px;
+  margin-top: 0px;
+  height: 22px;
+
+}
+
+.left a {
+  text-decoration: none;
+  color: #08c;
+}
+
+
+.footer-right {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4px;
+}
+
+.footer-right li {
+  padding-top: 5px;
+}
+
+.footer-right li a {
+  text-decoration: none;
+  color: #08c;
+  padding: 5px 5px 0px;
+}
+
+.bordered,
+.worldwide {
+  border-left: 1px solid #ccc;
+}
+
+
+.under-left {
+  margin-top: -10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.under-left p {
+  display: inline;
+}
+
+
+.under-left ul {
+  margin-left: -40px;
+  list-style-type: none;
+  display: inline;
+}
+
+.under-left ul li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.under-left ul li a {
+  text-decoration: none;
+  color: #08c;
+}
+
+
+.secondli {
+  border-left: 1px solid #ccc;
+}
